@@ -8,11 +8,61 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="assets/darkly.css" />
     <link rel="stylesheet" href="assets/style.css" />
     <title>TaskMaster</title>
   </head>
 
   <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row bg-info">
+          <div class="col-12 dropshadow text-center">
+            <h1>Task Master</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col mt-3 ml-3">
+          <form
+            class="form-inline"
+            onsubmit="app.listController.addList(event)"
+          >
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                id="name"
+                aria-describedby="helpId"
+                placeholder="Create List..."
+                required
+              />
+              <button type="submit" class="btn btn-outline-success ml-1">
+                Create
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-5" id="lists"></div>
+    </main>
+
+    <footer>
+      <div class="container-fluid bg-info">
+        <div class="row text-center">
+          <div class="col-12 dropshadow"><h4>Made With Love by Blake</h4></div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/8f2461537f.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="app/main.js" type="module"></script>
   </body>
 </html>
