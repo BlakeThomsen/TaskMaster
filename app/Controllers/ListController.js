@@ -1,7 +1,6 @@
 import _listService from "../Services/ListService.js";
 import _store from "../store.js";
 
-//TODO Don't forget to render to the screen after every data change.
 function _drawLists() {
   let lists = _store.State.lists;
   let template = "";
