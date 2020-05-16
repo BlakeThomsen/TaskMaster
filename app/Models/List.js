@@ -11,7 +11,7 @@ export default class List {
     <div class="col-3 mb-2">
     <div class="card shadow">
         <div class="card-body d-flex flex-column">
-        <div class="card-header bg-primary mb-1"></div>
+        <div class="card-header bg-info mb-1"></div>
             <i class="fas fa-times text-danger align-self-end action"
                 onclick="app.listController.deleteList('${this.id}')"></i>
             <h4 class="card-title">${this.name}</h4>

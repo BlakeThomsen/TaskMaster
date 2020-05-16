@@ -8,6 +8,10 @@ main {
   flex-grow: 1;
 }
 
+.action {
+  cursor: pointer;
+}
+
 .dropshadow {
   text-shadow: 2px 2px black;
 }
